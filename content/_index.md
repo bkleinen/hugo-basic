@@ -4,5 +4,6 @@ date: 2021-09-26T13:04:56+02:00
 draft: true
 ---
 
-# Header of Home Page
+# Content of Home Page
+
 Content of content/_index.html

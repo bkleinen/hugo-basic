@@ -3,9 +3,11 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+        {{- partial "navigation.html" . -}}
         <div id="content">
-        {{- block "main" . }}{{ .Content }}{{- end }}
+        {{- block "main" . }}Default definition of block main{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        {{- partial "debug.html" . -}}
     </body>
 </html>

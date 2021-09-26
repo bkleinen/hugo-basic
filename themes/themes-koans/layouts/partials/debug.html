@@ -1,0 +1,12 @@
+<h2>Debug Info</h2>
+<ul>
+<li>
+  Content File: {{ .File.Path }}
+</li><li>
+  Kind: {{ .Page.Kind}}
+</li><li>
+  Environment: {{ hugo.Environment }} Version: {{ hugo.CommitHash }}
+</li><li>
+{{ block "template" . }}block template not defined{{ end }}
+</li>
+</ul>
