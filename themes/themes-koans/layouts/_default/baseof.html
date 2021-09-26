@@ -4,9 +4,12 @@
     <body>
         {{- partial "header.html" . -}}
         {{- partial "navigation.html" . -}}
+        {{- partial "breadcrumbnav.html" . -}}
         <div id="content">
         {{- block "main" . }}Default definition of block main{{- end }}
         </div>
+        <hr/>
+          {{- partial "sitemap.html" . -}}
         {{- partial "footer.html" . -}}
 
 

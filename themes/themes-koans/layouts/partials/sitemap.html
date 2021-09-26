@@ -1,0 +1,18 @@
+
+
+<ul><li><a href= "{{ .Permalink }}">{{.Permalink }}</a>({{.Kind}})</li>
+{{ template "sitemap" . }}
+
+{{ define "sitemap" }}
+    <ul>
+    {{ range .Pages }}
+      <li><a href= "{{ .Permalink }}">{{.Dir }}</a>({{.Kind}})<br/>
+      <small><{{.LinkTitle }},{{.Name }},{{.Title }}</small>
+      </li>
+      {{ if .Pages }}
+         {{ template "sitemap" . }}
+      {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+<ul>
