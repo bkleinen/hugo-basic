@@ -5,8 +5,10 @@
 </li><li>
   Kind: {{ .Page.Kind}}
 </li><li>
-  Environment: {{ hugo.Environment }} Version: {{ hugo.CommitHash }}
+  Environment: {{ hugo.Environment }}
 </li><li>
-{{ block "template" . }}block template not defined{{ end }}
+  Version: {{ hugo.CommitHash }}
+</li><li>
+{{ block "template_not_working" . }}blocks have to be defined in baseof.html{{ end }}
 </li>
 </ul>

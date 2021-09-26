@@ -8,6 +8,10 @@
         {{- block "main" . }}Default definition of block main{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+
+
         {{- partial "debug.html" . -}}
+        <hr/>
+          {{ block "template" . }}block template not defined{{ end }}
     </body>
 </html>
