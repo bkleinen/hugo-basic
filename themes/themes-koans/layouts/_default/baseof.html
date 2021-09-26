@@ -10,11 +10,13 @@
         </div>
         <hr/>
           {{- partial "sitemap.html" . -}}
+        <hr/>
+        {{- partial "pagelist.html" . -}}
+
+        <hr/>
         {{- partial "footer.html" . -}}
-
-
         {{- partial "debug.html" . -}}
         <hr/>
-          {{ block "template" . }}block template not defined{{ end }}
+        {{ block "template" . }}block template not defined{{ end }}
     </body>
 </html>

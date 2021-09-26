@@ -1,0 +1,6 @@
+<h2>All Pages</h2>
+<ul>
+{{ range .Site.AllPages }}
+   <li><a href= "{{ .Permalink }}">{{.Dir }}({{.Kind}}- {{ .Weight}})</a>
+{{ end }}
+</ul>
