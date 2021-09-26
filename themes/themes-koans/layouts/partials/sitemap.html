@@ -8,7 +8,7 @@
 <ul>
 {{ template "sitemap" .Site.Home }}
 {{ define "sitemap" }}
-    <li><a href= "{{ .Permalink }}">{{.RelPermalink }} ({{.Kind}}- {{ .Weight}})</a> --- <small>{{.LinkTitle }},{{.Name }},{{.Title }}</small> </li>
+    <li><a href= "{{ .Permalink }}">{{.RelPermalink }} ({{.Kind}}- {{ .Weight}})</a> --- <small>{{.Type }},{{.LinkTitle }},{{.Name }},{{.Title }}</small> </li>
     {{ if .Pages }}
     <ul>
     {{ range .Pages }}
